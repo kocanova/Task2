@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakty - těžší</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1>Kino K+K</h1>
+      <p class="motto">Vaše rodinné kino</p>
+    </div>
+    <div class="system-wrapper">
+      <h2 class="system">REZERVAČNÍ SYSTÉM</h2>
+      <hr>
+    </div>
+  </header>
+  <section class="main">
+    <div class="datemovie-wrapper">
+      <section class="section section__dates">
+        <h3>Vyberte datum:</h3>
+        <div class="container container__dates" id="container__dates">
+          <div class="date date--archive" id="-7"></div>
+          <div class="date date--archive" id="-6"></div>
+          <div class="date date--archive" id="-5"></div>
+          <div class="date date--archive" id="-4"></div>
+          <div class="date date--archive" id="-3"></div>
+          <div class="date date--archive" id="-2"></div>
+          <div class="date date--archive" id="-1"></div>
+          <div class="date date--future date--future__today" id="0">Dnes</div>
+          <div class="date date--future" id="1">Zítra</div>
+          <div class="date date--future" id="2"></div>
+          <div class="date date--future" id="3"></div>
+          <div class="date date--future" id="4"></div>
+          <div class="date date--future" id="5"></div>
+          <div class="date date--future" id="6"></div>
+          <div class="date date--future" id="7"></div>
+        </div>
+      </section>
+      <section class="section section__program">
+        <h3>Program:</h3>
+        <div class="container container__timetable">
+          <div class="times">
+            <div class="time">10:00</div>
+            <div class="time">12:00</div>
+            <div class="time">14:00</div>
+            <div class="time">16:00</div>
+            <div class="time">18:00</div>
+            <div class="time">20:00</div>
+          </div>
+          <div class="movies" id="movies">
+            <div class="movie movie--0" id="movie0">Bankéř (169 Kč)</div>
+            <div class="movie movie--1" id="movie1">Tajemství a smysl života (138 Kč)</div>
+            <div class="movie movie--2" id="movie2">Šarlatán (175 Kč)</div>
+            <div class="movie movie--3" id="movie3">Gentlemani (169 Kč)</div>
+            <div class="movie movie--4" id="movie4">Tenet (169 Kč)</div>
+            <div class="movie movie--5" id="movie5">Neviditelný (175 Kč)</div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="section section__seats">
+      <h3>Plán sálu:</h3>
+      <div class="container container__seats" id="seats">
+        <div class="forward">PLÁTNO</div>
+        <div class="row row--0" id="row row--0">
+          <div class="seat seat--00" id="seat seat--00"></div>
+          <div class="seat seat--01" id="seat seat--01"></div>
+          <div class="seat seat--02" id="seat seat--02"></div>
+          <div class="seat seat--03" id="seat seat--03"></div>
+          <div class="seat seat--04" id="seat seat--04"></div>
+          <div class="seat seat--05" id="seat seat--05"></div>
+          <div class="seat seat--06" id="seat seat--06"></div>
+          <div class="seat seat--07" id="seat seat--07"></div>
+          <div class="seat seat--08" id="seat seat--08"></div>
+          <div class="seat seat--09" id="seat seat--09"></div>
+        </div>
+        <div class="row row--1" id="row row--1">
+          <div class="seat seat--10" id="seat seat--10"></div>
+          <div class="seat seat--11" id="seat seat--11"></div>
+          <div class="seat seat--12" id="seat seat--12"></div>
+          <div class="seat seat--13" id="seat seat--13"></div>
+          <div class="seat seat--14" id="seat seat--14"></div>
+          <div class="seat seat--15" id="seat seat--15"></div>
+          <div class="seat seat--16" id="seat seat--16"></div>
+          <div class="seat seat--17" id="seat seat--17"></div>
+          <div class="seat seat--18" id="seat seat--18"></div>
+          <div class="seat seat--19" id="seat seat--19"></div>
+
+        </div>
+        <div class="row row--2" id="row row--2">
+
+          <div class="seat seat--20" id="seat seat--20"></div>
+          <div class="seat seat--21" id="seat seat--21"></div>
+          <div class="seat seat--22" id="seat seat--22"></div>
+          <div class="seat seat--23" id="seat seat--23"></div>
+          <div class="seat seat--24" id="seat seat--24"></div>
+          <div class="seat seat--25" id="seat seat--25"></div>
+          <div class="seat seat--26" id="seat seat--26"></div>
+          <div class="seat seat--27" id="seat seat--27"></div>
+          <div class="seat seat--28" id="seat seat--28"></div>
+          <div class="seat seat--29" id="seat seat--29"></div>
+
+        </div>
+
+        <div class="row row--3" id="row row--3">
+          <div class="seat seat--30" id="seat seat--30"></div>
+          <div class="seat seat--31" id="seat seat--31"></div>
+          <div class="seat seat--32" id="seat seat--32"></div>
+          <div class="seat seat--33" id="seat seat--33"></div>
+          <div class="seat seat--34" id="seat seat--34"></div>
+          <div class="seat seat--35" id="seat seat--35"></div>
+          <div class="seat seat--36" id="seat seat--36"></div>
+          <div class="seat seat--37" id="seat seat--37"></div>
+          <div class="seat seat--38" id="seat seat--38"></div>
+          <div class="seat seat--39" id="seat seat--39"></div>
+        </div>
+        <div class="row row--4" id="row row--4">
+
+          <div class="seat seat--40" id="seat seat--40"></div>
+          <div class="seat seat--41" id="seat seat--41"></div>
+          <div class="seat seat--42" id="seat seat--42"></div>
+          <div class="seat seat--43" id="seat seat--43"></div>
+          <div class="seat seat--44" id="seat seat--44"></div>
+          <div class="seat seat--45" id="seat seat--45"></div>
+          <div class="seat seat--46" id="seat seat--46"></div>
+          <div class="seat seat--47" id="seat seat--47"></div>
+          <div class="seat seat--48" id="seat seat--48"></div>
+          <div class="seat seat--49" id="seat seat--49"></div>
+        </div>
+
+        <div class="row row--5" id="row row--5">
+
+          <div class="seat seat--50" id="seat seat--50"> </div>
+          <div class="seat seat--51" id="seat seat--51"></div>
+          <div class="seat seat--52" id="seat seat--52"></div>
+          <div class="seat seat--53" id="seat seat--53"></div>
+          <div class="seat seat--54" id="seat seat--54"></div>
+          <div class="seat seat--55" id="seat seat--55"></div>
+          <div class="seat seat--56" id="seat seat--56"></div>
+          <div class="seat seat--57" id="seat seat--57"></div>
+          <div class="seat seat--58" id="seat seat--58"></div>
+          <div class="seat seat--59" id="seat seat--59"></div>
+        </div>
+
+        <div class="row row--6" id="row row--6">
+
+          <div class="seat seat--60" id="seat seat--60"> </div>
+          <div class="seat seat--61" id="seat seat--61"></div>
+          <div class="seat seat--62" id="seat seat--62"></div>
+          <div class="seat seat--63" id="seat seat--63"></div>
+          <div class="seat seat--64" id="seat seat--64"></div>
+          <div class="seat seat--65" id="seat seat--65"></div>
+          <div class="seat seat--66" id="seat seat--66"></div>
+          <div class="seat seat--67" id="seat seat--67"></div>
+          <div class="seat seat--68" id="seat seat--68"></div>
+          <div class="seat seat--69" id="seat seat--69"></div>
+        </div>
+
+        <div class="row row--7" id="row row--7">
+
+          <div class="seat seat--70" id="seat seat--70"> </div>
+          <div class="seat seat--71" id="seat seat--71"></div>
+          <div class="seat seat--72" id="seat seat--72"></div>
+          <div class="seat seat--73" id="seat seat--73"></div>
+          <div class="seat seat--74" id="seat seat--74"></div>
+          <div class="seat seat--75" id="seat seat--75"></div>
+          <div class="seat seat--76" id="seat seat--76"></div>
+          <div class="seat seat--77" id="seat seat--77"></div>
+          <div class="seat seat--78" id="seat seat--78"></div>
+          <div class="seat seat--79" id="seat seat--79"></div>
+        </div>
+
+      </div>
+      <h4>Legenda:</h4>
+      <div class="legend">
+        <div class="legend--img legend--img__oc"></div>
+        <div class="legend--oc__desc">Obsazeno</div>
+
+
+
+        <div class="legend--img legend--img__fr"></div>
+        <div class="legend--fr__desc">Volno</div>
+
+
+        <div class="legend--img legend--img__sel"></div>
+        <div class="legend--sel__desc">Vybráno</div>
+      </div>
+      <p class="confirmation" id="confirmation"></p>
+
+      <button class="button button--main" id="button--main" onclick="confirmOccupied()">Rezervovat</button>
+
+
+
+    </section>
+
+  </section>
+
+
+
+
+  <script>
+
+    //localStorage.clear();
+
+
+
+
+    var storage = new Array()
+
+    for (var i = 0; i < 16; i++) {
+
+      storage[i] = new Array();
+
+      for (var j = 0; j < 6; j++) {
+
+        storage[i][j] = '';
+
+      }
+
+    }
+
+
+
+    var movieSelector;
+    var dateSelector;
+
+    var containerSeats = document.getElementById('seats');
+    var containerMovies = document.getElementById("movies");
+    var indexesOccupiedSession = [], j;
+    var indexesOccupiedSessionSorted;
+    var containerDates = document.getElementById("container__dates");
+    var allSeats = document.querySelectorAll(".seat");
+    var selectedSeatsOnMovie;
+    var count;
+    var price;
+    var difference;
+
+
+    calculateTimeDifference();
+    datesInitialization();
+
+    checkSelectedDate();
+    checkTime();
+    checkSelectedMovie();
+
+    initialization();
+    checkSelected();
+    checkOccupied();
+
+
+
+    function calculateTimeDifference() {
+
+      var thisAccess = new Date();
+      thisAccess.setHours(00, 00, 00, 00);
+      var d1 = (thisAccess.getTime());
+      var differenceInTime;
+      if (localStorage.getItem("lastAccess") !== null) {
+        d2 = localStorage.getItem("lastAccess");
+        differenceInTime = d1 - d2;
+        difference = differenceInTime / (1000 * 3600 * 24);
+
+      } else { difference = 0 };
+      localStorage.setItem("lastAccess", d1);
+      if (difference !== 0) {
+        rebuildDataStorage();
+      }
+    }
+
+    function rebuildDataStorage() {
+      for (i = difference; i < 15; i++) {
+        for (j = 0; j < 6; j++) {
+          var trans = (localStorage.getItem("storage" + i + j));
+          localStorage.setItem("storage" + (i - difference) + j, trans);
+          if (i > (15 - difference)) {
+            localStorage.setItem("storage" + i + j, "");
+          }
+        }
+      }
+      for (i = 0; i < 15; i++) {
+        for (j = 0; j < 6; j++) {
+          console.log(localStorage.getItem("storage" + i + j));
+        }
+      }
+    }
+
+
+    function initialization() {
+      if ((localStorage.getItem("storage" + localStorage.getItem("dateSelector") + localStorage.getItem("movieSelector"))) == null) { } /*{ storage[localStorage.getItem("dateSelector")][localStorage.getItem("movieSelector")] = ""; }*/
+      else {
+        storage[localStorage.getItem("dateSelector")][localStorage.getItem("movieSelector")] = (localStorage.getItem("storage" + localStorage.getItem("dateSelector") + localStorage.getItem("movieSelector")));
+
+      }
+    }
+
+    function initializationClick() {
+      if ((localStorage.getItem("storage" + dateSelector + movieSelector)) == null) { storage[dateSelector][movieSelector] = ""; }
+      else {
+        storage[dateSelector][movieSelector] = (localStorage.getItem("storage" + dateSelector + movieSelector));
+      }
+    }
+
+    function datesInitialization() {
+      for (i = 1; i < 8; i++) { //dates archiv
+        var getElDate = document.getElementById(- i);
+        var setDate = new Date();
+        setDate.setDate(setDate.getDate() - i);
+        var [month, date, year] = setDate.toLocaleDateString("en-US").split("/")
+        getElDate.innerHTML = date + "." + month + ".";
+      }
+
+      for (i = 2; i < 8; i++) { //dates future
+        var getElDate = document.getElementById(+ i);
+        var setDate = new Date();
+        setDate.setDate(setDate.getDate() + i);
+        var [month, date, year] = setDate.toLocaleDateString("en-US").split("/")
+        getElDate.innerHTML = date + "." + month + ".";
+      }
+    }
+
+    containerDates.addEventListener("click", e => { //selected date
+
+      var selectedDate = Number(e.target.id);
+      dateSelector = selectedDate + 7;
+      localStorage.setItem("dateSelector", dateSelector);
+      for (i = 0; i < allSeats.length; i++) {
+        for (j = 0; j < 15; j++) {
+          document.getElementById(j - 7).style.backgroundColor = "";
+          for (k = 0; k < 6; k++) {
+            if (allSeats[i].classList.contains("occupied-movie" + k + "-date" + j)) {
+              (allSeats[i].classList.remove("occupied-movie" + k + "-date" + j))
+              document.getElementById("movie" + k).style.backgroundColor = "white";
+            }
+
+            if (allSeats[i].classList.contains("selected-movie" + k + "-date" + j)) {
+              (allSeats[i].classList.remove("selected-movie" + k + "-date" + j))
+            }
+
+            if (allSeats[i].classList.contains("date" + j)) {
+              allSeats[i].classList.remove("date" + j);
+            }
+          }
+          allSeats[i].classList.add("date" + dateSelector);
+        }
+      }
+      for (l = -7; l < 8; l++) {
+        if (e.target.id == l) {
+          e.target.style.backgroundColor = "#fca311";
+        }
+      }
+      checkTime();
+      checkOccupied();
+
+    });
+    function checkTime() {
+      console.log(dateSelector);
+      for (i = 0; i < 6; i++) {
+        document.getElementById("movie" + i).style.backgroundColor = "white";
+        document.getElementById("movie" + i).style.pointerEvents = "auto";
+      }
+      if (dateSelector < 7) {
+        containerSeats.style.pointerEvents = "none";
+        document.getElementById("button--main").style.pointerEvents = "none";
+        document.getElementById("seats").style.pointerEvents = "none";
+        document.getElementById("confirmation").innerHTML = "Na toto datum již nelze kupovat vstupenky.";
+      } else {
+        document.getElementById("confirmation").innerHTML = "";
+        containerSeats.style.pointerEvents = "auto";
+        document.getElementById("button--main").style.pointerEvents = "auto";
+      }
+
+      if (dateSelector == 7) {
+        var now = new Date();
+        var h = now.getHours();
+        var k = 0;
+        for (i = 8; i < 19; i += 2) {
+          if (h > i) {
+            document.getElementById("seats").style.pointerEvents = "none";
+            document.getElementById("confirmation").innerHTML = "Vstupenky lze koupit nejpozději 2 hod před začátkem.";
+            document.getElementById("button--main").style.pointerEvents = "none";
+          }
+          k++;
+
+        }
+      }
+    }
+
+    containerMovies.addEventListener("click", e => {
+      document.getElementById("button--main").style.pointerEvents = "auto";
+      document.getElementById("seats").style.pointerEvents = "auto";
+      document.getElementById("confirmation").innerHTML = "";
+      if (dateSelector <= 7) {
+        checkTime();
+      }
+
+      for (i = 0; i < allSeats.length; i++) {
+        for (j = 0; j < 6; j++) {
+          if (allSeats[i].classList.contains("movie" + j)) {
+            allSeats[i].classList.remove("movie" + j);
+            document.getElementById("movie" + j).style.backgroundColor = "white";
+          }
+          for (k = 0; k < 16; k++) {
+            if (allSeats[i].classList.contains("selected-movie" + j + "-date" + k) || allSeats[i].classList.contains("occupied-movie" + j + "-date" + k)) {
+              allSeats[i].classList.remove("selected-movie" + j + "-date" + k);
+              allSeats[i].classList.remove("occupied-movie" + j + "-date" + k);
+            }
+          }
+        }
+        allSeats[i].classList.add(e.target.id);
+      }
+
+      for (l = 0; l < 6; l++) {
+        if (e.target.id == "movie" + l) {
+          e.target.style.backgroundColor = "#fca311";
+        }
+      }
+      selectedMovie = (e.target.id);
+      localStorage.setItem("selectedMovie", selectedMovie);
+      checkSelectedMovie();
+      checkOccupied();
+    });
+
+
+    containerSeats.addEventListener("click", e => {
+      if (
+        e.target.classList.contains("seat") &&
+        !e.target.classList.contains("occupied-movie" + localStorage.getItem("movieSelector") + "-date" + localStorage.getItem("dateSelector"))
+      ) {
+        e.target.classList.toggle("selected-" + selectedMovie + "-date" + dateSelector);
+
+      }
+      updateSelected();
+    });
+
+    function updateSelected() {
+      var indexesSelected = [], i;
+      for (i = 0; i < allSeats.length; i++) {
+        if (allSeats[i].classList.contains("selected-" + selectedMovie + "-date" + dateSelector)) {
+          indexesSelected.push(i);
+        }
+      }
+      selectedSeatsOnMovie = ("selected-").concat(selectedMovie).concat("-date").concat(dateSelector);
+      localStorage.setItem(selectedSeatsOnMovie, JSON.stringify(indexesSelected));
+    }
+
+
+    function checkSelectedDate() {
+      for (i = 0; i < allSeats.length; i++) {
+        if (allSeats[i].classList.contains("date" + i)) {
+          dateSelector = i;
+          localStorage.setItem("dateSelector", dateSelector);
+        }
+      }
+
+      if (localStorage.getItem("dateSelector") !== null) {
+        dateSelector = localStorage.getItem("dateSelector");
+        for (i = 0; i < allSeats.length; i++) {
+          allSeats[i].classList.add("date" + localStorage.getItem("dateSelector"));
+        }
+      }
+      if (localStorage.getItem("dateSelector") !== null) {
+        document.getElementById(Number(localStorage.getItem("dateSelector") - 7)).style.backgroundColor = "#fca311";
+      }
+    }
+
+    function checkSelectedMovie() {
+      for (j = 0; j < allSeats.length; j++) {
+        if (allSeats[j].classList.contains("movie" + j)) {
+          movieSelector = j;
+          localStorage.setItem("movieSelector", movieSelector);
+        }
+      }
+
+      if (localStorage.getItem("selectedMovie") !== null) {
+        selectedMovie = localStorage.getItem("selectedMovie");
+        for (i = 0; i < allSeats.length; i++) {
+          allSeats[i].classList.add(localStorage.getItem("selectedMovie"));
+        }
+        document.getElementById("movie" + localStorage.getItem("movieSelector")).style.backgroundColor = "#fca311";
+      }
+
+
+
+    }
+
+    function checkSelected() {
+      if (localStorage.getItem("selectedMovie") !== null) {
+        var selectedSeatsOnMovie = ("selected-").concat(selectedMovie).concat("-date").concat(dateSelector);;
+        var selectedToObj = JSON.parse(localStorage.getItem(selectedSeatsOnMovie));
+        if (selectedToObj !== null) {
+          for (i = 0; i < selectedToObj.length; i++) {
+            for (j = 0; j < allSeats.length; j++) {
+              if (selectedToObj[i] == j) {
+                allSeats[j].classList.toggle("selected-" + selectedMovie + "-date" + dateSelector);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    function checkOccupied() {
+      if ((localStorage.getItem("storage" + localStorage.getItem("dateSelector") + localStorage.getItem("movieSelector"))) !== null) {
+        var occupiedMovieString = (localStorage.getItem("storage" + localStorage.getItem("dateSelector") + localStorage.getItem("movieSelector")));
+        var occupiedMovieArray = occupiedMovieString.split(",");
+        var occupiedMovieSorted = occupiedMovieArray.sort(function (a, b) { return a - b });
+        var occupiedClean = [];
+        var x = 0;
+        for (i = 0; i < occupiedMovieSorted.length; i++) {
+          if (occupiedMovieSorted[i] !== "") {
+            occupiedClean[x] = occupiedMovieSorted[i];
+            x++;
+          }
+        }
+
+
+        for (i = 0; i < occupiedClean.length; i++) {
+          for (j = 0; j < allSeats.length; j++) {
+            if (occupiedClean[i] == j) {
+              allSeats[j].classList.toggle("occupied-" + selectedMovie + "-date" + dateSelector);
+            }
+          }
+        }
+      }
+    }
+
+    function confirmOccupied() {
+      indexesOccupiedSession = [], j;
+      var selectedToObj = JSON.parse(localStorage.getItem("selected-" + selectedMovie + "-date" + dateSelector));
+      if (selectedToObj.length !== 0) {
+        for (i = 0; i < selectedToObj.length; i++) {
+          for (j = 0; j < allSeats.length; j++) {
+            if (allSeats[j].classList.contains("movie" + j)) {
+              movieSelector = j;
+            }
+            if (selectedToObj[i] == j) {
+              allSeats[j].classList.add("occupied-" + selectedMovie + "-date" + dateSelector);
+              allSeats[j].classList.remove("selected-" + selectedMovie + "-date" + dateSelector);
+              indexesOccupiedSession.push(j);
+            }
+          }
+        }
+        count = selectedToObj.length;
+        var insideEl = document.getElementById(selectedMovie).innerHTML;
+        var numb = insideEl.replace(/[^0-9]/g, '')
+        price = count * numb;
+        document.getElementById("confirmation").innerHTML = "Zarezervoval/a jste " + count + " ks vstupenek za celkem " + price + " Kč.";
+        var occupiedLoaded;
+
+        if ((localStorage.getItem("storage" + dateSelector + movieSelector)) !== null) {
+          occupiedLoaded = localStorage.getItem("storage" + dateSelector + movieSelector);
+        } else { occupiedLoaded = storage[dateSelector][movieSelector] };
+        var indexesOccupiedSessionString = "";
+
+        for (i = 0; i < indexesOccupiedSession.length; i++) {
+          indexesOccupiedSessionString += indexesOccupiedSession[i];
+          if (i < (indexesOccupiedSession.length - 1)) {
+            indexesOccupiedSessionString += ",";
+          }
+        }
+        if (occupiedLoaded !== null) {
+          console.log(occupiedLoaded);
+          storage[dateSelector][movieSelector] = (occupiedLoaded.concat(indexesOccupiedSessionString, ","));
+        }
+        else {
+          storage[dateSelector][movieSelector] = indexesOccupiedSessionString;
+        }
+
+        localStorage.setItem("storage" + dateSelector + movieSelector, storage[dateSelector][movieSelector]);
+      }
+      localStorage.setItem(selectedSeatsOnMovie, null);
+
+    }
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>
